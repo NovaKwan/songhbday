@@ -1,7 +1,6 @@
-input.onSound(DetectedSound.Loud, function () {
-    music.startMelody(music.builtInMelody(Melodies.Birthday), MelodyOptions.Forever)
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    music.startMelody(music.builtInMelody(Melodies.Birthday), MelodyOptions.Once)
 })
-input.setSoundThreshold(SoundThreshold.Loud, 100)
 basic.forever(function () {
 	
 })
